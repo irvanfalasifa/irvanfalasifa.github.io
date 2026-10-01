@@ -363,3 +363,10 @@ body {
   width: 100%;
   outline: none;
 }
+
+.text-justify {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}

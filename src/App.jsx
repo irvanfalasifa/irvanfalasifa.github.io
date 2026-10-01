@@ -117,18 +117,21 @@ function App() {
 
         <motion.header initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="hero">
           <h1>Irvan Falasifa Hasan</h1>
-          <h2 className="gradient-text">Machine Learning & IoT Enthusiast</h2>
+          <h2 className="gradient-text">Bridging Data Science, AI, and Software Engineering</h2>
           <p className="hero-desc">
-            Menggabungkan kecerdasan buatan berbasis data dengan solusi perangkat keras dunia nyata. 
-            Fokus pada performa, efisiensi, dan arsitektur sistem yang terukur.
+            Mengintegrasikan analitik data, arsitektur frontend-backend, dan pemodelan Machine Learning berskala industri.
+            Bersemangat mendorong inovasi melalui Artificial Intelligence, LLM, dan ekosistem komputasi cerdas.
           </p>
         </motion.header>
 
         <motion.section initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpItem} className="section">
           <h2 className="section-title">Tentang Saya</h2>
           <div className="card plain-card">
-            <p className="text-muted">
-              Saya adalah lulusan Teknik Informatika dari UIN Sunan Gunung Djati yang antusias dalam memecahkan masalah melalui teknologi. Saya terbiasa menjembatani dua ekosistem: menganalisis data menggunakan Machine Learning di Python (seperti implementasi algoritma C5.0, optimasi GridSearchCV, dan interpretasi SHAP) serta membangun sistem fisik melalui perakitan sirkuit dan mikrokontroler seperti ESP32.
+            <p className="text-muted text-justify">
+              Saya adalah lulusan Teknik Informatika dari UIN Sunan Gunung Djati dengan fokus pada Data Science, Data Engineering, dan pengembangan model Machine Learning untuk implementasi skala industri. Saya memiliki ketertarikan mendalam terhadap evolusi Artificial Intelligence, khususnya pemanfaatan Large Language Models (LLM) dalam memecahkan kompleksitas sistem modern. Di samping ekosistem data, saya juga memiliki pemahaman komprehensif dalam pengembangan perangkat lunak secara end-to-end, mencakup arsitektur frontend maupun backend.
+            </p>
+            <p className="text-muted text-justify">
+              Pendekatan logis saya tidak hanya berpusat pada perangkat lunak, tetapi juga meluas ke dunia fisik. Di waktu luang, saya sangat menikmati eksplorasi teknologi secara hands-on—mulai dari memprogram mikrokontroler seperti ESP32, melakukan troubleshooting dan reparasi elektronika tingkat komponen, hingga memodifikasi mechanical keyboard. Kombinasi antara keahlian analitik di level algoritma dan pemahaman struktural pada hardware ini membentuk cara saya merancang sistem yang efisien secara holistik.
             </p>
           </div>
         </motion.section>
@@ -139,12 +142,44 @@ function App() {
             
             <motion.div variants={fadeUpItem} whileHover={{ y: -5 }} className="card">
               <div className="card-header">
-                <h3><Code size={18} className="inline-icon"/> Model Prediksi Masa Studi</h3>
+                <h3><Cpu size={18} className="inline-icon"/> Integrasi Gemini AI API</h3>
                 <div className="card-links"><a href="#"><ExternalLink size={16} /></a></div>
               </div>
-              <p className="text-muted">Klasifikasi berbasis Decision Tree C5.0 dengan optimasi GridSearchCV. Mencakup interpretasi data menggunakan visualisasi SHAP value.</p>
+              <p className="text-muted text-justify">Implementasi chatbot interaktif pada platform website dengan memanfaatkan kapabilitas Natural Language Processing (NLP) dari Gemini AI API. Sistem ini dirancang untuk memberikan respons otomatis dan cerdas guna meningkatkan pengalaman pengguna.</p>
               <div className="tech-stack">
-                <span>Python</span> <span>Scikit-Learn</span> <span>SHAP</span>
+                <span>JavaScript</span> <span>Node.js</span> <span>Vanilla  </span> <span>Gemini AI API</span>
+              </div>
+            </motion.div>
+            
+            <motion.div variants={fadeUpItem} whileHover={{ y: -5 }} className="card">
+              <div className="card-header">
+                <h3><Code size={18} className="inline-icon"/> Klasifikasi Machine Learning: Prediksi Masa Studi</h3>
+                <div className="card-links"><a href="#"><ExternalLink size={16} /></a></div>
+              </div>
+              <p className="text-muted text-justify">Perancangan model machine learning dengan memanfaatkan Decision Tree C5.0 yang dioptimasi melalui GridSearchCV. Dilengkapi analisis Explainable AI (XAI) menggunakan SHAP untuk interpretasi faktor dominan secara komputasional.</p>
+              <div className="tech-stack">
+                <span>Python</span> <span>Scikit-Learn</span> <span>SHAP</span> <span>SMOTE</span>
+              </div>
+            </motion.div>
+
+            <motion.div variants={fadeUpItem} whileHover={{ y: -5 }} className="card">
+              <div className="card-header">
+                <h3><Code size={18} className="inline-icon"/> SIMKAPAI</h3>
+                <div className="card-links"><a href="#"><ExternalLink size={16} /></a></div>
+              </div>
+              <p className="text-muted text-justify">Pengembangan aplikasi web internal instansi untuk kebutuhan digitalisasi dan pengarsipan dokumen kegiatan. Dilengkapi dengan fitur manajemen basis data terpusat untuk memudahkan pelacakan arsip dan meningkatkan efisiensi administrasi.</p>
+              <div className="tech-stack">
+                <span>Laravel</span> <span>PHP</span> <span>CSS</span>
+              </div>
+            </motion.div>            
+
+            <motion.div variants={fadeUpItem} whileHover={{ y: -5 }} className="card">
+              <div className="card-header">
+                <h3><Wrench size={18} className="inline-icon"/> Hardware Troubleshooting</h3>
+              </div>
+              <p className="text-muted text-justify">Troubleshooting tingkat komponen pada unit catu daya dan perangkat seluler menggunakan pengujian sirkuit dan multimeter.</p>
+              <div className="tech-stack">
+                <span>Multimeter</span> <span>Soldering</span> <span>PSU</span>
               </div>
             </motion.div>
 
@@ -153,22 +188,12 @@ function App() {
                 <h3><Cpu size={18} className="inline-icon"/> Otomatisasi ESP32</h3>
                 <div className="card-links"><a href="#"><ExternalLink size={16} /></a></div>
               </div>
-              <p className="text-muted">Eksplorasi dan konfigurasi pinout mikrokontroler menggunakan platform ESP32 dan ATtiny85 yang terintegrasi dengan modul Wi-Fi.</p>
+              <p className="text-muted text-justify">Eksplorasi dan konfigurasi pinout mikrokontroler menggunakan platform ESP32 dan ATtiny85 yang terintegrasi dengan modul Wi-Fi.</p>
               <div className="architecture-diagram">
                 <code>[Sensor] &rarr; [ESP32 Node] &harr; [Wi-Fi]</code>
               </div>
               <div className="tech-stack">
                 <span>ESP32</span> <span>ATtiny85</span> <span>C++</span>
-              </div>
-            </motion.div>
-
-            <motion.div variants={fadeUpItem} whileHover={{ y: -5 }} className="card">
-              <div className="card-header">
-                <h3><Wrench size={18} className="inline-icon"/> Hardware Troubleshooting</h3>
-              </div>
-              <p className="text-muted">Troubleshooting tingkat komponen pada unit catu daya dan perangkat seluler menggunakan pengujian sirkuit dan multimeter.</p>
-              <div className="tech-stack">
-                <span>Multimeter</span> <span>Soldering</span> <span>PSU</span>
               </div>
             </motion.div>
 
