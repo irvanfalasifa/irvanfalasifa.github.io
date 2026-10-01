@@ -68,8 +68,10 @@ body {
 /* Navbar */
 /* Floating Glassmorphism Navbar (Gaya iOS Terbaru) */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 1rem;
+  left: 0;         /* Wajib agar posisinya tetap di tengah */
+  right: 0;
   width: calc(100% - 3rem);
   max-width: 860px;
   margin: 0 auto 1.5rem auto;
@@ -137,7 +139,7 @@ body {
 
 /* Hero Section */
 .hero {
-  padding: 4rem 0 2rem;
+  padding: 7rem 0 2rem;
 }
 
 .hero h1 {
