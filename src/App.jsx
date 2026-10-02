@@ -185,15 +185,15 @@ function App() {
 
             <motion.div variants={fadeUpItem} whileHover={{ y: -5 }} className="card">
               <div className="card-header">
-                <h3><Cpu size={18} className="inline-icon"/> Otomatisasi ESP32</h3>
+                <h3><Cpu size={18} className="inline-icon"/> Smart Mini Robot ESP32</h3>
                 <div className="card-links"><a href="#"><ExternalLink size={16} /></a></div>
               </div>
-              <p className="text-muted text-justify">Eksplorasi dan konfigurasi pinout mikrokontroler menggunakan platform ESP32 dan ATtiny85 yang terintegrasi dengan modul Wi-Fi.</p>
+              <p className="text-muted text-justify">Rancang bangun robot mini interaktif berbasis ESP32 Supermini yang terhubung dengan smartphone via Bluetooth. Dilengkapi fitur untuk menampilkan notifikasi, navigasi peta, dan animasi wajah dinamis pada layar OLED, serta dikemas dengan 3D printed case kustom.</p>
               <div className="architecture-diagram">
-                <code>[Sensor] &rarr; [ESP32 Node] &harr; [Wi-Fi]</code>
+                <code>[Smartphone] &rarr; [ESP32 Bluetooth] &harr; [Oled Display]</code>
               </div>
               <div className="tech-stack">
-                <span>ESP32</span> <span>ATtiny85</span> <span>C++</span>
+                <span>ESP32</span> <span>OLED</span> <span>Bluetooth</span> <span>C++</span> <span>3D Print</span>
               </div>
             </motion.div>
 
@@ -205,17 +205,25 @@ function App() {
           <div className="activity-list">
             <div className="activity-item">
               <GitCommit size={16} className="activity-icon" />
-              <span>Push pembaruan model klasifikasi dan interpretasi SHAP ke <strong>thesis-ml-c50</strong></span>
+              <span>💡 Coming Soon ...</span>
             </div>
             <div className="activity-item">
               <GitCommit size={16} className="activity-icon" />
-              <span>Analisis komponen Schottky dioda pada power supply unit selesai.</span>
+              <span>Menyelesaikan integrasi fitur chatbot berbasis Gemini AI API ke dalam website.</span>
+            </div>
+            <div className="activity-item">
+              <GitCommit size={16} className="activity-icon" />
+              <span>Membangun model machine learning prediksi masa studi menggunakan algoritma C5.0 dan interpretasi SHAP.</span>
+            </div>
+            <div className="activity-item">
+              <GitCommit size={16} className="activity-icon" />
+              <span>Pengembangan sistem informasi manajemen kegiatan menggunakan framework Laravel.</span>
             </div>
           </div>
         </motion.section>
 
         <footer className="footer">
-          <p>&copy; {new Date().getFullYear()} Irvan Falasifa Hasan. Built with React & Vite.</p>
+          <p>&copy; {new Date().getFullYear()} irvanfalasifa. Built with ❤, React & Vite.</p>
         </footer>
       </div>
     </div>
